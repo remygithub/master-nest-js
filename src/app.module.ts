@@ -19,7 +19,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
       isGlobal: true,
       load: [ormConfig],
       expandVariables: true,
-      envFilePath: `${process.env.NODE_ENV ?? ''}.env`,
+      envFilePath: `${process.env.NODE_ENV ?? ''}.env.local`,
     }),
     TypeOrmModule.forRootAsync({
       useFactory:
